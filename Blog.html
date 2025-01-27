@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Faris Lindov</title>
+    <link rel="icon" type="image/x-icon" href="Img/favicon.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Sono:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body style="background-color: #364861" onload="Sakrij(); Ulaz()"><!--ASOHDAOSIDHOUIASDOUIASDOUASH-->
+    <script type="text/javascript">
+        function Sakrij(){
+            document.getElementById("AsideBlog").style.visibility='hidden';
+            document.getElementById("Shadow").style.visibility='hidden';
+        }
+        function Otkrij(){
+            document.getElementById("AsideBlog").style.visibility='visible';
+            document.getElementById("Shadow").style.visibility='visible';
+        }
+        function Ulaz() {
+            document.getElementById("BlogInfo1").style.visibility='hidden';
+            document.getElementById("BlogInfo2").style.visibility='hidden';
+            document.getElementById("BlogInfo3").style.visibility='hidden';
+            document.getElementById("BlogInfo4").style.visibility='hidden';
+            document.getElementById("BlogInfo5").style.visibility='hidden';
+            document.getElementById("BlogInfo6").style.visibility='hidden';
+            document.getElementById("BlogInfoM1").style.visibility='hidden';
+            document.getElementById("BlogInfoM2").style.visibility='hidden';
+            document.getElementById("BlogInfoM3").style.visibility='hidden';
+            document.getElementById("BlogInfoM4").style.visibility='hidden';
+            document.getElementById("BlogInfoM5").style.visibility='hidden';
+            document.getElementById("BlogInfoM6").style.visibility='hidden';
+        }
+        function SakrijBI(a) {
+            var BIM = "BlogInfoM" + a;
+            var BI = "BlogInfo" + a;
+            document.getElementById(BI).style.visibility='hidden';
+            document.getElementById(BIM).style.visibility='hidden';
+        }
+        function PrikaziBI(a){
+            var BIM = "BlogInfoM" + a;
+            var BI = "BlogInfo" + a;
+            document.getElementById(BI).style.visibility='visible';
+            document.getElementById(BIM).style.visibility='visible';
+        }
+        function Prikazi() {
+            document.getElementById("BCS").style.display='initial';
+            document.getElementById("BCA").style.display='initial';
+            document.getElementById("BCO").style.display='initial';
+            document.getElementById("BCT1").style.display='initial';
+            document.getElementById("BCT2").style.display='initial';
+            document.getElementById("BCT3").style.display='initial';
+            Sakrij();
+        }
+        function PrikaziT() {
+            document.getElementById("BCT1").style.display='initial';
+            document.getElementById("BCT2").style.display='initial';
+            document.getElementById("BCT3").style.display='initial';
+            document.getElementById("BCS").style.display='none';
+            document.getElementById("BCA").style.display='none';
+            document.getElementById("BCO").style.display='none';
+            Sakrij();
+        }
+        function PrikaziA() {
+            document.getElementById("BCA").style.display='initial';
+            document.getElementById("BCS").style.display='none';
+            document.getElementById("BCO").style.display='none';
+            document.getElementById("BCT1").style.display='none';
+            document.getElementById("BCT2").style.display='none';
+            document.getElementById("BCT3").style.display='none';
+            Sakrij();
+        }
+        function PrikaziO() {
+            document.getElementById("BCO").style.display='initial';
+            document.getElementById("BCS").style.display='none';
+            document.getElementById("BCT1").style.display='none';
+            document.getElementById("BCT2").style.display='none';
+            document.getElementById("BCT3").style.display='none';
+            document.getElementById("BCA").style.display='none';
+            Sakrij();
+        }
+        function PrikaziS() {
+            document.getElementById("BCS").style.display='initial';
+            document.getElementById("BCO").style.display='none';
+            document.getElementById("BCT1").style.display='none';
+            document.getElementById("BCT2").style.display='none';
+            document.getElementById("BCT3").style.display='none';
+            document.getElementById("BCA").style.display='none';
+            Sakrij();
+        }
+    </script>
+    <!------------------------------------------------------------------------------------------------------------>
+    <nav>
+    <div class="container-fluid MainHeader">
+        <div class="row">
+            <div class="col-12 col-md-3 text-center text-md-start LogoParent">
+                <a href="index.html"><div class="Logo"></div></a>
+                <input type="text" placeholder="Search.." class ="Search">
+            </div>
+            <div class="col-9 col-md-7 text-center LinkItems">
+                <a href="OMeni.html" class=" text-decoration-none Links">O Meni</a>
+                <a href="Projekti.html" class=" text-decoration-none Links">Projekti</a>
+                <a href="" class=" text-decoration-none Links Galerija">Galerija<i class="bi bi-caret-down-fill"></i></a>
+                <div class="Dropdown">
+                    <a href="Galerija1.html">Travel</a><br>
+                    <a href="Galerija2.html">Ostalo</a><br>
+                </div>
+                <a href="Blog.html" class=" text-decoration-none Links">Blog</a></div>
+            <div class="col-3 col-md-2 float-right KontaktDiv">
+                <a href="Kontakt.html" class="text-decoration-none"><div class="KontaktButton">Kontakt</div></a>
+            </div>
+        </div>
+    </div>
+    </nav>
+    <!------------------------------------------------------------------------------------------------------------>
+    <div class="NavPrikaz"></div>
+    <div class="Shadow" id = "Shadow"></div>
+    <div class = "Aside" id = "AsideBlog">
+        <div class="btn btn-default NavDugme2" onclick="Sakrij()">X</div>
+        <a href = "#" onclick="Prikazi()"><h3>Sve</h3></a>
+        <a href="#"     onclick="PrikaziT()"><h3>Tehnologija</h3></a>
+        <a href = "#" onclick="PrikaziS()"><h3>Sport</h3></a>
+        <a href = "#" onclick="PrikaziA()"><h3>Automobil</h3></a>
+        <a href = "#" onclick="PrikaziO()"><h3>Ostalo</h3></a>
+    </div>
+    <!------------------------------------------------------------------------------------------------------------>
+    <div class="container-fluid BlogInfo" id = "BlogInfo1">
+        <div class="container BlogInfoM" id = "BlogInfoM1">
+            <div class="btn" onclick="SakrijBI(1)">X</div>
+            <div class = "Slika1"></div>
+            <br>
+            <h1>Umjetna inteligencija</h1>
+            <br>
+            <hr>
+            <br>
+            <h3 id ="RUT">Revolucija u tehnologiji</h3>
+            <br>
+            <p>U posljednjih nekoliko godina umjetna inteligencija (UI) postala je dio naše svakodnevnice. Od
+                prepoznavanja lica na telefonima do pametnih asistenta poput Alexe i Google Assistanta, ova
+                tehnologija ne prestaje impresionirati. Međutim, ono što je nekada izgledalo kao naučna fantastika
+                danas oblikuje naše živote.
+                UI nije samo alat – ona je revolucija. Zahvaljujući mašinskom učenju, UI analizira ogromne količine
+                podataka i donosi odluke koje mijenjaju industrije. Na primjer, u zdravstvu pomaže doktorima da
+                postave tačnije dijagnoze, dok u transportu autonomna vozila postaju stvarnost.
+                Zamislite svijet u kojem roboti rade složene zadatke umjesto ljudi. Iako ovaj koncept uzbuđuje, on
+                također izaziva strah. Hoće li UI zamijeniti radnike? Šta će biti s privatnošću kada pametni sistemi prate
+                svaki naš pokret?</p>
+            <img src="img/AI1.jpg" style="width: 70%;">
+            <br>
+            <h3 id = "IIB">Izazovi i budućnost</h3>
+            <br>
+            <p>
+                Jedan od najvećih izazova umjetne inteligencije je povjerenje. Ljudi se pitaju mogu li se osloniti na
+                algoritme koji donose odluke umjesto njih. Osim toga, pitanje etike postaje sve važnije – kako osigurati
+                da se UI koristi na način koji je pravedan za sve?
+                Unatoč ovim dilemama, budućnost UI-a je obećavajuća. Stručnjaci predviđaju da će ona pomoći u borbi
+                protiv klimatskih promjena, otkrivati nove lijekove i omogućiti personalizirano obrazovanje. Jedno je
+                sigurno – UI nije samo tehnologija, već partner u izgradnji bolje budućnosti.
+                Dok gledamo kako ova tehnologija napreduje, važno je da ne zaboravimo osnovnu vrijednost – da sve
+                što stvaramo služi ljudima i njihovom blagostanju.</p>
+                <div style="height: 200px;"></div>
+                 <ul class ="Sadrzaj"><h4> Sadržaj </h4>
+                <hr>
+                <li><a href="#RUT">Revolucija u tehnologiji</a></li>
+                <li><a href="#IIB">Izazovi i budućnost</a></li>
+            </ul>
+        </div>
+    </div>
+    <!------------------------------------------------------------------------------------------------------------>
+    <!------------------------------------------------------------------------------------------------------------>
+    <div class="container-fluid BlogInfo" id = "BlogInfo2">
+        <div class="container BlogInfoM" id = "BlogInfoM2">
+            <div class="btn" onclick="SakrijBI(2)">X</div>
+            <div class = "Slika1"></div>
+            <br>
+            <h1>Šta donosi 5G?</h1>
+            <br>
+            <hr>
+            <br>
+            <h3 id = "RUP">Revolucija u povezivanju</h3>
+            <br>
+            <p>Kada je 4G mreža prvi put predstavljena, činilo se kao da internet ne može postati brži. Međutim,
+                dolaskom 5G tehnologije, sve se promijenilo. Brzina preuzimanja i stabilnost mreže sada su na potpuno
+                novom nivou, omogućavajući ljudima da se povezuju na načine koji su nekada bili nezamislivi.
+                5G nije samo poboljšana verzija prethodne mreže – to je temelj za digitalnu revoluciju. U pametnim
+                gradovima, ova mreža omogućava povezivanje hiljada uređaja, od saobraćajnih kamera do kućnih
+                uređaja. U zdravstvu, doktori sada mogu izvoditi udaljene operacije zahvaljujući stabilnoj i ultra-brzoj
+                povezanosti.
+                Zamislite svijet u kojem su automobili autonomni, gdje VR tehnologija pruža iskustva u realnom
+                vremenu i gdje su virtualni sastanci toliko realistični da zaboravite da ste u digitalnom prostoru. Sve to
+                donosi 5G.</p>
+                <img src="img/5G1.png" style="width: 70%;"><br>
+            <h3 id = "PIP">Prednosti i prepreke</h3>
+            <br>
+            <p>
+            Naravno, kao i svaka nova tehnologija, 5G nosi izazove. Izgradnja infrastrukture za ovu mrežu zahtijeva
+            ogromna ulaganja. U mnogim regijama, posebno u ruralnim područjima, pristup 5G mreži još uvijek je
+            ograničen.
+            Osim toga, neki ljudi izražavaju zabrinutost zbog uticaja 5G signala na zdravlje, iako istraživanja nisu
+            pokazala značajne negativne efekte. Tehnološke kompanije rade na uvjeravanju javnosti da je ova
+            tehnologija sigurna.
+            Unatoč izazovima, prednosti 5G-a daleko nadmašuju prepreke. Ovo je mreža budućnosti koja ne samo
+            da povezuje ljude već i stvara temelje za inovacije koje će oblikovati naš svijet. S napretkom 5G-a, svijet
+            postaje brži, efikasniji i povezaniji.</p>
+            <div style="height: 200px;"></div>
+            <ul class ="Sadrzaj"><h4> Sadržaj </h4>
+                <hr>
+                <li><a href="#RUP">Revolucija u povezivanju</a></li>
+                <li><a href="#PIP">Prednosti i prepreke</a></li>
+            </ul>
+        </div>
+    </div>
+    <!------------------------------------------------------------------------------------------------------------>
+    <!------------------------------------------------------------------------------------------------------------>
+    <div class="container-fluid BlogInfo" id = "BlogInfo3">
+        <div class="container BlogInfoM" id = "BlogInfoM3">
+            <div class="btn" onclick="SakrijBI(3)">X</div>
+            <div class = "Slika1"></div>
+            <br>
+            <h1>Virtuelna stvarnost</h1>
+            <br>
+            <hr>
+            <br>
+            <h3 id = "VSUO">Virtuelni svijet u obrazovanju</h3>
+            <br>
+            <p>Virtuelna stvarnost (VR) više nije samo alat za zabavu – ona postaje moćno sredstvo obrazovanja.
+                Zamislite učionicu u kojoj učenici ne samo da čitaju o povijesti, već mogu hodati po ulicama drevnog
+                Rima. Zahvaljujući VR tehnologiji, obrazovanje postaje interaktivno i uzbudljivo.
+                Učenici sada mogu istraživati složene naučne koncepte kroz simulacije koje su ranije bile dostupne samo
+                u laboratorijama. Na primjer, biologija oživljava kada učenici „uđu“ u ljudsko tijelo i posmatraju kako
+                funkcionišu organi. Takva iskustva ne samo da olakšavaju razumijevanje, već i povećavaju interes za
+                učenjem.</p>
+            <img src="img/VirtualReality1.jpg" style="width: 70%;"><br>
+            <h3 id = "BUVS">Budućnost u virtuelnom svijetu</h3>
+            <br>
+            <p>
+            Osim obrazovanja, VR je transformisao i svijet zabave. Igre su postale toliko realistične da igrači osjećaju
+            kao da su zaista u akciji. Filmovi i koncerti također koriste VR, pružajući publici potpuno novo iskustvo.
+            Ipak, VR dolazi s izazovima. Cijena opreme je još uvijek visoka, što ovu tehnologiju čini nedostupnom
+            mnogima. Također, previše vremena provedenog u virtuelnom svijetu može utjecati na mentalno
+            zdravlje.
+            Unatoč ovim izazovima, VR nastavlja rušiti granice stvarnog i digitalnog svijeta. Uz stalni razvoj, ova
+            tehnologija obećava da će nastaviti obogaćivati naš svakodnevni život i otvarati vrata ka neograničenim
+            mogućnostima.</p>
+            <div style="height: 200px;"></div>
+            <ul class ="Sadrzaj"><h4> Sadržaj </h4>
+                <hr>
+                <li><a href="#VSUO">Virtuelni svijet u obrazovanju</a></li>
+                <li><a href="#BUVS">Budućnost u virtuelnom svijetu</a></li>
+            </ul>
+        </div>
+    </div>
+    <!------------------------------------------------------------------------------------------------------------>
+     <!------------------------------------------------------------------------------------------------------------>
+    <div class="container-fluid BlogInfo" id = "BlogInfo4">
+        <div class="container BlogInfoM" id = "BlogInfoM4">
+            <div class="btn" onclick="SakrijBI(4)">X</div>
+            <div class = "Slika1"></div>
+            <br>
+            <h1>Manchester United</h1>
+            <br>
+            <hr>
+            <br>
+            <h3 id = "NTNV">Novi trener, nova vizija</h3>
+            <br>
+            <p>Manchester United, jedan od najpoznatijih nogometnih klubova na svijetu, ulazi u novu eru s dolaskom
+                Erica ten Haga na mjesto glavnog trenera. Nakon godina promjenjivih rezultata i nesigurnosti, dolazak
+                bivšeg trenera Ajaxa donio je optimizam među navijače Crvenih đavola.
+                Ten Hag je poznat po svom modernom pristupu nogometu, fokusiranom na posjed lopte, brze tranzicije i
+
+                disciplinovanu igru. Njegov rad u Ajaxu, gdje je osvojio nekoliko naslova i impresionirao u Ligi prvaka,
+                daje nadu da može vratiti United na vrh engleskog i evropskog nogometa.
+                Njegova filozofija se temelji na razvijanju mladih igrača i stvaranju tima koji igra atraktivan, ali učinkovit
+                nogomet. Mladi talenti poput Alejandra Garnacha, Hannibala Mejbrija i Marcusa Rashforda već pokazuju
+                znakove napretka pod njegovim vodstvom.</p>
+            <img src="img/RubenAmorim1.jpg" style="width: 70%;" id = "Postava"><br>
+            <table class="table TabelaIgraca">
+                <thead>
+                    <tr>
+                        <th scope="col">Broj</th>
+                        <th scope="col">Ime</th>
+                        <th scope="col">Prezime</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>André</td>
+                        <td>Onana</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>Lisandro</td>
+                        <td>Martinez</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Mathijs</td>
+                        <td>De Ligt</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>Lisandro</td>
+                        <td>Martínez</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">20</th>
+                        <td>Diogo</td>
+                        <td>Dalot</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">23</th>
+                        <td>Luke</td>
+                        <td>Shaw</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">25</th>
+                        <td>Manuel</td>
+                        <td>Ugarte</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">37</th>
+                        <td>Kobbie</td>
+                        <td>Mainoo</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">8</th>
+                        <td>Bruno</td>
+                        <td>Fernandes</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">17</th>
+                        <td>Alejandro</td>
+                        <td>Garnacho</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9</th>
+                        <td>Rasmus</td>
+                        <td>Hojlund</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 id = "IIO">Izazovi i očekivanja</h3>
+            <br>
+            <p>
+            Ipak, put ka uspjehu nije jednostavan. Ten Hag se suočava s izazovima poput konsolidacije tima,
+                prilagodbe novih igrača i vraćanja povjerenja navijača. Ključne utakmice u Premier ligi i evropskim
+                takmičenjima bit će test za njegovu sposobnost da brzo implementira svoje ideje.
+                Navijači su strpljivi, ali njihova očekivanja su visoka. Žele vidjeti povratak mentaliteta pobjednika koji je
+                obilježio eru Sir Alexa Fergusona. Ten Hagov pristup već donosi pozitivne promjene – tim igra s više
+                samopouzdanja, a rezultati polako prate.
+                Dok Manchester United ulazi u ovu novu fazu, jedno je sigurno – Eric ten Hag donosi novu energiju i
+                odlučnost koja bi mogla vratiti klub na mjesto koje zaslužuje.</p>
+            <div style="height: 200px;"></div>
+            <ul class ="Sadrzaj"><h4> Sadržaj </h4>
+                <hr>
+                <li><a href="#NTNV">Novi Trener, nova vizija</a></li>
+                <li><a href="#Postava">Postava</a></li>
+                <li><a href="#IIO">Izazovi i očekivanja</a></li>
+            </ul>
+        </div>
+    </div>
+    <!------------------------------------------------------------------------------------------------------------>
+    <!------------------------------------------------------------------------------------------------------------>
+    <div class="container-fluid BlogInfo" id = "BlogInfo5">
+        <div class="container BlogInfoM" id = "BlogInfoM5">
+            <div class="btn" onclick="SakrijBI(5)">X</div>
+            <div class = "Slika1"></div>
+            <br>
+            <h1 >Električni automobili</h1>
+            <br>
+            <hr>
+            <br>
+            <h3 id = "EA">Elektrifikacija cesti</h3>
+            <br>
+            <p>Automobili na električni pogon mijenjaju svijet transporta brže nego ikada prije. Dok su nekada bili
+                rijetkost, danas su električni automobili prisutni na cestama širom svijeta, simbolizirajući budućnost koja
+                se okreće održivosti.
+                Marke poput Tesle, Nissana i BMW-a predvode ovu revoluciju. Njihova vozila nude ne samo ekološku
+                prihvatljivost već i performanse koje mogu konkurisati najboljim benzinskim motorima. Električni
+                automobili su tihi, ekonomični i idealni za gradski saobraćaj.
+                Punjenje baterija postaje jednostavnije, s novim stanicama koje se pojavljuju na svakom koraku. Iako
+                ovaj proces još uvijek traje duže od točenja goriva, tehnologija brzo napreduje, čineći električne
+                automobile sve praktičnijim.</p>
+               <img src="img/ECar1.jpeg" style="width: 70%;"><br> 
+            <h3 id="IIP">Izazovi i perspektive</h3>
+            <br>
+            <p>
+            Ipak, prelazak na električna vozila nije bez izazova. Visoke cijene i ograničen domet baterija još uvijek su
+            prepreka za mnoge vozače. Ruralne sredine često nemaju pristup stanicama za punjenje, što otežava
+            široku primjenu ovih vozila.
+            Ali budućnost izgleda obećavajuće. Vlade širom svijeta uvode subvencije kako bi električni automobili
+            postali pristupačniji. Istovremeno, proizvođači rade na razvoju baterija s dužim trajanjem i bržim
+            punjenjem.
+            Električni automobili nisu samo trend – oni su nužnost u borbi protiv zagađenja. Vožnja prema zelenijoj
+            budućnosti zahtijeva promjenu navika, ali svijet je spreman za ovu transformaciju koja obećava čišći i
+            održiviji planet.</p>
+            <div style="height: 200px;"></div>
+            <ul class ="Sadrzaj"><h4> Sadržaj </h4>
+                <hr>
+                <li><a href="#EA">Elektrifikacija cesti</a></li>
+                <li><a href="#IIP">Izazovi i perspektive</a></li>
+            </ul>
+        </div>
+    </div>
+    <!------------------------------------------------------------------------------------------------------------>
+    <!------------------------------------------------------------------------------------------------------------>
+    <div class="container-fluid BlogInfo" id = "BlogInfo6">
+        <div class="container BlogInfoM" id = "BlogInfoM6">
+            <div class="btn" onclick="SakrijBI(6)">X</div>
+            <div class = "Slika1"></div>
+            <br>
+            <h1>Black Ops 6</h1>
+            <br>
+            <hr>
+            <br>
+            <h3 id = "PUIUNGI">Prvi utisci i utjecaj na gaming industriju</h3>
+            <br>
+            <p>Call of Duty: Black Ops 6, najnoviji nastavak popularne franšize, već je nakon izlaska izazvao buru oduševljenja među fanovima. Igra, razvijena od strane Treyarcha, predstavlja veliki korak naprijed za FPS (First-Person Shooter) žanr, s inovacijama koje redefinišu iskustvo igranja.
+            Prvi utisci govore o nevjerovatnoj grafici i naprednoj umjetnoj inteligenciji protivnika. Zahvaljujući novom grafičkom motoru, svjetlosni efekti, detalji okoliša i fluidnost animacija podižu vizualni doživljaj na potpuno novi nivo. Kritičari i igrači ističu da je Black Ops 6 do sada najambiciozniji naslov u serijalu.
+            Utjecaj igre na gaming industriju je neosporan. Novi načini igranja i duboko integrisana priča inspirisali su druge developere da podignu standarde za buduće FPS igre. Također, multiplayer mod donosi potpuno novi nivo kompetitivnosti, privlačeći milione igrača širom svijeta.</p>
+            <img src="img/BO61.jpg" style="width: 70%;"><br>
+            <video width="420" height="340" controls><source src="Video/BO6.mp4" type="video/mp4" id = "Trailer"></video> 
+            <br>
+            <h3 id="SJNUBO6">Šta je novo u Black Ops 6?</h3>
+            <br>
+            <p>
+            Jedna od najvećih promjena je "Chrono Ops" mod, gdje igrači putuju kroz različite vremenske epohe i bore se u futurističkim i historijskim bitkama. Ovaj mod ne samo da dodaje raznovrsnost, već i omogućava igranje s potpuno prilagodljivim arsenalom iz različitih perioda.
+            Kampanja u igri je interaktivnija nego ikad prije, s izborima koji direktno utiču na ishod priče. Ovo čini svaki prelazak unikatnim iskustvom, što motiviše igrače da istražuju sve mogućnosti.
+            Treyarch je također predstavio novi sistem kretanja koji omogućava realističniji osjećaj borbe, uključujući dinamične skokove i akrobacije. Multiplayer mod donosi "Battle Arenu," ogromnu mapu s do 150 igrača, gdje se taktičke odluke i timski rad ističu kao ključni faktori za pobjedu.
+
+            Black Ops 6 nije samo još jedna FPS igra – to je dokaz da inovacije u gaming industriji i dalje pomiču granice. Ovaj naslov nije samo zabava, već i pokazatelj kako videoigre mogu pružiti nevjerovatno bogata i kompleksna iskustva.</p>
+            <div style="height: 200px;"></div>
+            <ul class ="Sadrzaj"><h4> Sadržaj </h4>
+                <hr>
+                <li><a href="#PUIUNGI">Prvi utisci i utjecaj na gaming industriju</a></li>
+                <li><a href="#Trailer">Trailer</a></li>
+                <li><a href="#SJNUBO6">Šta je novo u Black Ops 6?</a></li>
+            </ul>
+        </div>
+    </div>
+    <!------------------------------------------------------------------------------------------------------------>
+    <div class="SideNavThing" onclick="Otkrij()">>&#9776;</div>
+    <!------------------------------------------------------------------------------------------------------------>
+    <div class = "container MainBlog">
+        <div class="row">
+                <div class="col-11 col-sd-11 col-md-3 col-ld-3 mb-3 BlogCards" onclick="PrikaziBI(1)" id = "BCT1">
+                <p style="float:left;">#Tehnologija</p><br>
+                <div class="BlogCardsImg1"></div>
+                <h4>Umjetna inteligencija: Revolucija u tehnologiji</h4>
+                <hr>
+                <p>Mane, predonsti i koji su izazovi?</p>
+            </div>
+            <div class="col-11 col-sd-11 col-md-3 col-ld-3 mb-3 BlogCards" onclick="PrikaziBI(2)" id = "BCT2">
+                <p style="float:left;">#Tehnologija</p><br>
+                <div class="BlogCardsImg2"></div>
+                <h4>Šta donosi 5G?</h4>
+                <hr>
+                <p>Revolucija u povezivanju, da li utiče na zdravlje?</p>
+            </div>
+            <div class="col-11 col-sd-11 col-md-3 col-ld-3 mb-3 BlogCards" onclick="PrikaziBI(3)" id = "BCT3">
+                <p style="float:left;">#Tehnologija</p><br>
+                <div class="BlogCardsImg3"></div>
+                <h4>Virtuelni svijet u obrazovanju</h4>
+                <hr>
+                <p>Budućnost u učionicama</p>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-11 col-sd-11 col-md-3 col-ld-3 mb-3 BlogCards" onclick="PrikaziBI(4)" id = "BCS">
+                <p style="float:left;">#Sport</p><br>
+                <div class="BlogCardsImg4"></div>
+                <h4>Manchester United: Ruben Amorim</h4>
+                <hr>
+                <p>Novi trener, nova vizija</p>
+            </div>
+            <div class="col-11 col-sd-11 col-md-3 col-ld-3 mb-3 BlogCards" onclick="PrikaziBI(5)" id = "BCA">
+                <p style="float:left;">#Automobil</p><br>
+                <div class="BlogCardsImg5"></div>
+                <h4>Električni automobili</h4>
+                <hr>
+                <p>Elektrifikacija cesti, izazovi i perspektive</p>
+            </div>
+            <div class="col-11 col-sd-11 col-md-3 col-ld-3 mb-3 BlogCards" onclick="PrikaziBI(6)" id = "BCO">
+                <p style="float:left;">#Gaming</p><br>
+                <div class="BlogCardsImg6"></div>
+                <h4>Call of duty: Black ops 6</h4>
+                <hr>
+                <p>Inovacije i prve recenzije</p>
+        </div>
+     
+    </div>
+</div>
+    <!------------------------------------------------------------------------------------------------------------>
+    <div style="height: 300px;"></div>
+     <footer>
+        <div class="container-fluid text-center Footer">
+            <a href="#top" class = "ScrollToTop">&#8683;</a>
+            <p id="PratiteMeNaTxt">Pratite me na:</p>
+            <div class="SocialMedia">
+                <a target ="_blank"style="display: inline-block;" href = "https://www.instagram.com/linda.exe_/"><div class="SocialMediaLinks"><img src="img/ig.png" id = "SMImage"></div></a>
+                <a target ="_blank"style="display: inline-block;" href = "https://x.com/exe_linda"><div class="SocialMediaLinks"><img src="img/x.png" id = "SMImage"></div></a>
+                <a target ="_blank"style="display: inline-block;" href = "https://www.facebook.com/faris.lindov.9"><div class="SocialMediaLinks"><img src="img/facebook.png" id = "SMImage"></div></a>
+                <a target ="_blank"style="display: inline-block;" href = "https://github.com/GoodmanFaris"><div class="SocialMediaLinks"><img src="img/github.png" id = "SMImageGH"></div></a>
+            </div>
+        </div>
+        <div class="container-fluid text-center FooterKraj">Sarajevo | 25.11.2024   &#169;</div>
+    </footer>
+
+</body>
+</html>
